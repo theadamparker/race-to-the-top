@@ -1,0 +1,163 @@
+body { 
+    margin: 0;
+    @include media('<=phone') {
+        line-height: 1.4;
+    }
+}
+
+a,
+.btn,
+button {
+    text-decoration: none;
+    @extend %transition;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+
+    &:before,
+    &:after,
+    *,
+    *:before,
+    *:after {
+        @extend %transition;
+    }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h {
+    font-family: $headings-font-family;
+    font-weight: bold;
+    margin: 0 0 19px;
+    color: $headings-color;
+    line-height: 1.1;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    a {
+        color: inherit;
+        &:hover {
+            color: $base-link-color;
+        }
+    }
+}
+
+h1,
+.h1 {
+    font-size: 2.688rem;
+    
+    @include media('>=phone') {
+        font-size: 3rem; 
+    }
+    
+    @include media('>=desktop') {
+        font-size: $h1-font-size;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 2.5rem;
+  
+    @include media('>=phone') {
+        font-size: $h2-font-size;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 1.875rem;
+
+    @include media('>=tablet') {
+        font-size: $h3-font-size;
+    }
+}
+
+h4,
+.h4 {
+    font-size: $h4-small-font-size;
+
+    @include media('>=tablet') {
+        font-size: $h4-font-size;
+    }
+}
+
+h5,
+.h5 {
+    font-size: $h5-small-font-size;
+    font-weight: 500;
+
+    @include media('>=tablet') {
+        font-size: $h5-font-size;
+    }
+}
+
+h6,
+.h6 {
+    font-size: $h6-small-font-size;
+
+    @include media('>=tablet') {
+        font-size: $h6-font-size;
+    }
+}
+
+p {
+    margin: 0 0 1em;
+    font-size: 1rem;
+    @include media('>=phone') {
+        font-size: 1.25rem;
+        margin: 0 0 1.335em;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    color: $base-link-color;
+
+    &:hover {
+        color: $base-link-hover-color;
+        text-decoration: underline;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: $base-max-width;
+    padding: 0 42px;
+    margin: 0 auto;
+    @extend %clearfix;
+    @include media('>=phone') {
+        padding: 0 24px;
+    }
+    @include media('>=widescreen') { 
+        padding: 0 32px;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.table-responsive {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#wrapper {
+    position: relative;
+    overflow: hidden;
+}

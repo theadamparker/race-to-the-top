@@ -1,0 +1,20 @@
+#header {
+    @include position(0,0,auto,0);
+    z-index: 9;
+    @include media('<=phone') {
+        margin: 0 -30px;
+    }
+}
+
+.logo {
+    @include size(37px, auto);
+    @include media('>=phone') {
+        @include size(60px, auto);
+    }
+    a {
+        display: block;
+    }
+    img {
+        @include size(100%, auto);
+    }
+}
