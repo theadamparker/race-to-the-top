@@ -68,7 +68,7 @@ h3,
 .h3 {
     font-size: 1.875rem;
 
-    @include media('>=tablet') {
+    @include media('>=phone') {
         font-size: $h3-font-size;
     }
 }
