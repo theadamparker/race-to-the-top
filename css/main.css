@@ -2446,7 +2446,7 @@ a:hover, a:focus {
   right: 0;
   bottom: auto;
   left: 0;
-  z-index: 9;
+  z-index: 99;
 }
 @media (max-width: 767px) {
   #header {
