@@ -2735,6 +2735,9 @@ picture {
     background: #50635A;
   }
 }
+.intro .text a {
+  color: #fff;
+}
 .intro .row {
   height: 100%;
 }

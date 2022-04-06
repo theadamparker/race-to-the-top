@@ -218,6 +218,11 @@ picture {
             }
         }
     }
+    .text {
+        a {
+            color: $white;
+        }
+    }
     .row {
         height: 100%;
         &.reverse-sm {
