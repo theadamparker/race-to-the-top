@@ -3535,7 +3535,7 @@ blockquote cite span {
 }
 @media (min-width: 992px) {
   .info-holder h2 {
-    padding-left: 150px;
+    /* padding-left: 150px; */
     margin-bottom: 0;
   }
 }

@@ -854,7 +854,7 @@ blockquote {
         max-width: 500px;
         margin-bottom: 24px;
         @include media('>=tablet') {
-            padding-left: 150px;
+            // padding-left: 150px;
             margin-bottom: 0;
         }
         @include media('>=widescreen') {
