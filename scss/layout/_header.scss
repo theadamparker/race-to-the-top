@@ -13,6 +13,7 @@
     }
     a {
         display: block;
+        background: none;
     }
     img {
         @include size(100%, auto);

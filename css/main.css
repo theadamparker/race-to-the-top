@@ -2466,6 +2466,7 @@ a:hover, a:focus {
 }
 .logo a {
   display: block;
+  background: none;
 }
 .logo img {
   width: 100%;
@@ -2526,6 +2527,10 @@ picture {
 
 .text-center {
   text-align: center;
+}
+
+.animated-link:hover {
+  color: inherit;
 }
 
 .player-overlay {

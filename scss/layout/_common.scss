@@ -54,6 +54,12 @@ picture {
     text-align: center;
 }
 
+.animated-link {
+    &:hover {
+        color: inherit;
+    }
+}
+
 .player-overlay {
     position: absolute;
     top: 0;
